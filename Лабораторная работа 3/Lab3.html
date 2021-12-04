@@ -1,0 +1,83 @@
+<meta charset="utf-8">
+<script>
+
+//блок-схема загадки
+var otgadki = 0
+alert("Загадка1. Два конца, два кольца, Посредине гвоздик.")
+var finish1 = 'Ножницы'
+var answer1 = prompt("Введите ответ: ")
+	if (answer1 == finish1){
+		otgadki += 1
+		alert("Верно :)" + otgadki)
+	}
+	else{
+		alert("Неверный ответ :(" + otgadki)
+	}
+
+	alert("Загадка 2. Красна девица Сидит в темнице, А коса на улице.")
+	var finish2 = 'Морковь'
+	var answer2 = prompt("Введите ответ: ")
+
+	if (answer1 == finish1){
+		otgadki += 1
+		alert("Верно :)" + otgadki)
+	}
+	else{
+		alert("Неверный ответ :(" + otgadki)
+	}
+
+// вывод чисел от одного до десяти
+	var x = 1;
+	while (x <=10){
+		alert(x++)
+	}
+// застолье
+	var b;
+	while (b != 1){
+		var b = prompt("Введите 1 для выхода: ")
+		alert("Еще по одной?")
+	}
+//факториал
+	var n = parseInt(prompt("Введите число: "))
+	fact = 1
+	while (n > 1){
+		fact *= n
+		n -= 1}
+alert(fact)
+
+console.log(inputNumber + '! = ' + total);
+
+
+//Палиндром
+let surname = prompt('enter surname: ') 
+//Разбиваем строку посимвольно  и превращаем ее в массив с помощью split(''), потом применяем к нему метод reverse() и собираем все символы в строку с помощью join('')
+  if (surname == surname.split("").reverse().join("")){
+      alert('Палиндром')
+  } else {
+      alert('Не палиндром')
+  }; 
+    if (strReverse == str) {
+      return 'yes';
+    } else {
+      return 'no';
+    }
+ 
+ //Простые числа
+    var flag = true;
+    console.log(1);
+    for (let i = 3; i < 18; i+=2){
+    	flag = true;
+    	// никакое число не делится на число которое больше его корня
+    	// Например 9 не делиться на 4 нацело 
+    	for (let j = 3; j<Math.pow(i, 0.5); j++){
+    		if (i%j == 0){
+    			flag = false;
+    			break;
+    		}
+    	}
+    	if (flag) {
+    		console.log(i);
+    	}
+    }
+
+</script>

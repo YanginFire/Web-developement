@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<script>
+alert("Лабораторная работа 3 Массивы")
+var sred = 0;
+var sum = 0;
+var array = [];
+var min = -15;
+var max = 30;
+var colichestvo = 0;
+
+
+
+for ( i = 0; i < 15; i++ ) {
+
+    array.push( Math.round(Math.random()*(max-min)+min));
+
+}
+document.write( '<br>' + array );
+
+
+for (i = 0; i < 15; i++) {
+	if (array[i] > 0)
+	{
+		sum = sum + array[i];
+		colichestvo ++
+	}
+}
+document.write( 'Количество =' + colichestvo);
+sred = sum/colichestvo;
+
+document.write( 'Среднее арифметическое =' + sred);
+</script>

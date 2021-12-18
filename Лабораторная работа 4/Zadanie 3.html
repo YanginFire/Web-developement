@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+<script>
+var arr = [1,2,-7,8,-9,5,-6,4,0]
+var sred_poloz = 0
+var sred_otriz = 0
+var sum_poloz = 0
+var sum_otriz = 0
+var colichestvo_p = 0
+var colichestvo_o = 0
+var colichestvo_null = 0
+
+for (i=0;i<10;i++)
+{
+	if (arr[i] > 0)
+	{
+		sum_poloz = sum_poloz + arr[i];
+		colichestvo_p ++
+	}
+
+	if (arr[i] < 0)
+	{
+		sum_otriz = sum_otriz + arr[i];
+		colichestvo_o ++
+	}
+
+	if (arr[i]==0)
+	{
+		colichestvo_null ++
+	}
+}
+sred_poloz = sum_poloz/colichestvo_p;
+sred_otriz = sum_otriz/colichestvo_o;
+document.write('Массив = ' + arr);
+document.write('Среднее арифметическое положительное = ' + sred_poloz);
+document.write('Среднее арифметическое отрицательных = ' + sred_otriz);
+document.write('Количество нулей = ' + colichestvo_null);
+</script>

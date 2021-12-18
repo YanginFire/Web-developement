@@ -1,0 +1,81 @@
+<meta charset="utf-8">
+<script>
+
+let user = {
+  name: "Джон",
+  age: 30
+};
+
+user.sayHi = function() {
+  alert("Привет!");
+};
+
+user.sayHi(); 
+
+let customers_info = {
+  first_name:["Irina", "Yana", "Alex"],
+  last_name: ["Kudinova", "Loginskaya", "Portnov"],
+  address:["Moscow","Lipetsk", "Mariupol"],
+  phone:["88005553535","79494789846","74629956846"],
+  age: ["19","32","24"]
+};
+
+//document.write("<p>" +"Имя:" + customers_info.first_name +" </p>")
+//document.write("<p>" + "Фамилия:"+ customers_info.last_name+" </p>")
+//document.write("<p>" +"Телефон:"+ customers_info.phone+" </p>")
+
+let restorants = {
+	name_of_restorant: ["Додо Пицца", "Якитория", "Ресторан Мясо"],
+	phone: "+79994445577" ,
+	address: ["Москва, Пятницкое шоссе", "Yaroslavsky prospekt", "Moscow, Ploshad' Revolitsyi"] ,
+	number_of_workers: ["80","34","32"]
+}
+
+let orders = {
+	name_of_order:["Пицца Карбонара","Калифорния", "Мясо"],
+	id_of_order: [2233,4543,3453]
+}
+
+document.write("<h1>"+'Имя заказчика: '+"</h1>")
+for (i=0; i<3; i++) {
+
+	document.write("<p>"+(i+1)+")"+customers_info.first_name[i]+" </p>")
+}
+
+document.write("<p>"+"<h1>"+'Фамилия заказчика: '+"</h1>"+" </p>")
+for (i=0; i<3; i++) {
+
+	document.write("<p>"+(i+1)+")"+customers_info.last_name[i]+" </p>")
+}
+//document.write(order.address_delivery + customers_info.address)
+//document.write("<p>" +order.name_of_customer + customers_info.first_name +" "+ customers_info.last_name+" </p>")
+//document.write()
+
+document.write("<p>"+"<h1>"+'Заказ: '+"</h1>"+" </p>")
+for (i=0; i<3; i++) {
+
+	document.write("<p>"+(i+1)+")"+orders.name_of_order[i]+" </p>")
+}
+
+document.write("<p>"+"<h1>"+'Номер заказа: '+"</h1>"+" </p>")
+for (i=0; i<3; i++) {
+
+	document.write("<p>"+(i+1)+")"+orders.id_of_order[i]+" </p>")
+}
+
+document.write("<p>"+"<h1>"+'Ресторан: '+"</h1>"+" </p>")
+for (i=0; i<3; i++) {
+
+	document.write("<p>"+(i+1)+")"+restorants.name_of_restorant[i]+" </p>")
+}
+
+function NewUser(name) {
+  this.name = name;
+}
+
+let user = new User("Вася")
+alert(user.name)
+document.write("<p>"+user.name+" </p>")
+
+
+</script>
